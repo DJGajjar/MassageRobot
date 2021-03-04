@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (5.2.2)
+  - Cosmos (23.0.0)
+  - EasyTipView (2.1.0)
+  - IQKeyboardManagerSwift (6.5.6)
+  - NVActivityIndicatorView (4.5.1):
+    - NVActivityIndicatorView/Presenter (= 4.5.1)
+  - NVActivityIndicatorView/Presenter (4.5.1)
+  - TagListView (1.4.1)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - Cosmos
+  - EasyTipView (~> 2.1)
+  - IQKeyboardManagerSwift
+  - NVActivityIndicatorView (~> 4.5.0)
+  - TagListView (~> 1.0)
+  - Toast-Swift (~> 5.0.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Cosmos
+    - EasyTipView
+    - IQKeyboardManagerSwift
+    - NVActivityIndicatorView
+    - TagListView
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  EasyTipView: a92b6edc377b81c5ac18e9fd35d5ee78e9409488
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  NVActivityIndicatorView: ec34a7b88c51fab270004a1a1f32116e711010cd
+  TagListView: a1c236d17960a0cf64156725a76ce6d73ebce2be
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: 121aa7f4d623ba1d6a2dbdeec9f38548955a774a
+
+COCOAPODS: 1.10.0.rc.1

@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		183DE2B025F0FF7B009CCDCC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183DE2AF25F0FF7B009CCDCC /* LoginViewController.swift */; };
+		183DE2B625F10210009CCDCC /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183DE2B525F10210009CCDCC /* LoginModel.swift */; };
+		183DE2B925F10372009CCDCC /* UIApplication+extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183DE2B825F10371009CCDCC /* UIApplication+extention.swift */; };
+		183DE2BC25F103CE009CCDCC /* helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183DE2BB25F103CE009CCDCC /* helper.swift */; };
+		186796FA25EE4810003CD7CB /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186796F925EE480F003CD7CB /* Constant.swift */; };
+		18D17BDE25EE2E2C0013E531 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D17BDC25EE2E2C0013E531 /* HomeViewCell.swift */; };
+		18D17BDF25EE2E2C0013E531 /* HomeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D17BDD25EE2E2C0013E531 /* HomeViewCell.xib */; };
+		18DEF2ED25EE6B8300ABD7FA /* SharedFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DEF2EC25EE6B8300ABD7FA /* SharedFunctions.swift */; };
+		490D1A5125CBD87A00EAAA28 /* SF-Pro-Text-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 490D1A4525CBD87900EAAA28 /* SF-Pro-Text-LightItalic.otf */; };
+		490D1A5225CBD87A00EAAA28 /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 490D1A4625CBD87900EAAA28 /* SF-Pro-Text-Bold.otf */; };
+		490D1A5325CBD87A00EAAA28 /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 490D1A4725CBD87900EAAA28 /* SF-Pro-Text-Light.otf */; };
+		490D1A5425CBD87A00EAAA28 /* SF-Pro-Text-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 490D1A4825CBD87A00EAAA28 /* SF-Pro-Text-BoldItalic.otf */; };
+		490D1A5525CBD87A00EAAA28 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 490D1A4925CBD87A00EAAA28 /* SF-Pro-Text-Regular.otf */; };
+		490D1A5625CBD87A00EAAA28 /* SF-Pro-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 490D1A4A25CBD87A00EAAA28 /* SF-Pro-Text-RegularItalic.otf */; };
+		490D1A5725CBD87A00EAAA28 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 490D1A4B25CBD87A00EAAA28 /* SF-Pro-Text-Medium.otf */; };
+		490D1A5825CBD87A00EAAA28 /* SF-Pro-Text-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 490D1A4C25CBD87A00EAAA28 /* SF-Pro-Text-MediumItalic.otf */; };
+		490D1A5925CBD87A00EAAA28 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 490D1A4D25CBD87A00EAAA28 /* SF-Pro-Text-Semibold.otf */; };
+		490D1A5A25CBD87A00EAAA28 /* SF-Pro-Text-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 490D1A4E25CBD87A00EAAA28 /* SF-Pro-Text-HeavyItalic.otf */; };
+		490D1A5B25CBD87A00EAAA28 /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 490D1A4F25CBD87A00EAAA28 /* SF-Pro-Text-Heavy.otf */; };
+		490D1A5C25CBD87A00EAAA28 /* SF-Pro-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 490D1A5025CBD87A00EAAA28 /* SF-Pro-Text-SemiboldItalic.otf */; };
+		490D1A7E25CC10B500EAAA28 /* CustomDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490D1A7D25CC10B500EAAA28 /* CustomDelegate.swift */; };
+		491B6E8425CBC895001A4494 /* UnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491B6E8325CBC894001A4494 /* UnderlineTextField.swift */; };
+		495FC87E25CBBB9900EA73AA /* CreateToutine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495FC87D25CBBB9900EA73AA /* CreateToutine.storyboard */; };
+		495FC88125CBBCF100EA73AA /* CreateRoutineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495FC88025CBBCF100EA73AA /* CreateRoutineViewController.swift */; };
+		495FC88525CBBF9F00EA73AA /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495FC88425CBBF9F00EA73AA /* Media.xcassets */; };
+		495FC88825CBC14E00EA73AA /* Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495FC88725CBC14E00EA73AA /* Extenstion.swift */; };
+		499EBC4725C7D20D00C42C5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499EBC4625C7D20D00C42C5C /* AppDelegate.swift */; };
+		499EBC4925C7D20D00C42C5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499EBC4825C7D20D00C42C5C /* SceneDelegate.swift */; };
+		499EBC4B25C7D20D00C42C5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499EBC4A25C7D20D00C42C5C /* ViewController.swift */; };
+		499EBC4E25C7D20D00C42C5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 499EBC4C25C7D20D00C42C5C /* Main.storyboard */; };
+		499EBC5125C7D20D00C42C5C /* MassageRobot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 499EBC4F25C7D20D00C42C5C /* MassageRobot.xcdatamodeld */; };
+		499EBC5325C7D20E00C42C5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 499EBC5225C7D20E00C42C5C /* Assets.xcassets */; };
+		499EBC5625C7D20E00C42C5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 499EBC5425C7D20E00C42C5C /* LaunchScreen.storyboard */; };
+		49AFC49C25DE8112003DDB95 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AFC49B25DE8112003DDB95 /* TriangleView.swift */; };
+		49AFC49F25DE818C003DDB95 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AFC49E25DE818C003DDB95 /* SettingsViewController.swift */; };
+		49B6D12725DC033C005F2FE8 /* FilledColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B6D12625DC033C005F2FE8 /* FilledColorView.swift */; };
+		49B8DA2825D2B9950000B386 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B8DA2725D2B9950000B386 /* JSONParser.swift */; };
+		49E00CB925DEAD3D0098AD41 /* RoutineParam.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E00CB825DEAD3D0098AD41 /* RoutineParam.xib */; };
+		49E00CBC25DEAEAE0098AD41 /* RoutineParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E00CBB25DEAEAE0098AD41 /* RoutineParam.swift */; };
+		B7CA1A9DE94BBEAB99A454F1 /* Pods_MassageRobot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC9434CA4B5F7B9D91DAE65 /* Pods_MassageRobot.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0763F3EF3F6FEC075D6AE0E3 /* Pods-MassageRobot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MassageRobot.release.xcconfig"; path = "Target Support Files/Pods-MassageRobot/Pods-MassageRobot.release.xcconfig"; sourceTree = "<group>"; };
+		183DE2AF25F0FF7B009CCDCC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		183DE2B525F10210009CCDCC /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		183DE2B825F10371009CCDCC /* UIApplication+extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+extention.swift"; sourceTree = "<group>"; };
+		183DE2BB25F103CE009CCDCC /* helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = helper.swift; sourceTree = "<group>"; };
+		186796F925EE480F003CD7CB /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		18D17BDC25EE2E2C0013E531 /* HomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
+		18D17BDD25EE2E2C0013E531 /* HomeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewCell.xib; sourceTree = "<group>"; };
+		18DEF2EC25EE6B8300ABD7FA /* SharedFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedFunctions.swift; sourceTree = "<group>"; };
+		490D1A4525CBD87900EAAA28 /* SF-Pro-Text-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-LightItalic.otf"; sourceTree = "<group>"; };
+		490D1A4625CBD87900EAAA28 /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
+		490D1A4725CBD87900EAAA28 /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
+		490D1A4825CBD87A00EAAA28 /* SF-Pro-Text-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-BoldItalic.otf"; sourceTree = "<group>"; };
+		490D1A4925CBD87A00EAAA28 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		490D1A4A25CBD87A00EAAA28 /* SF-Pro-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-RegularItalic.otf"; sourceTree = "<group>"; };
+		490D1A4B25CBD87A00EAAA28 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		490D1A4C25CBD87A00EAAA28 /* SF-Pro-Text-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-MediumItalic.otf"; sourceTree = "<group>"; };
+		490D1A4D25CBD87A00EAAA28 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		490D1A4E25CBD87A00EAAA28 /* SF-Pro-Text-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-HeavyItalic.otf"; sourceTree = "<group>"; };
+		490D1A4F25CBD87A00EAAA28 /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; };
+		490D1A5025CBD87A00EAAA28 /* SF-Pro-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		490D1A7D25CC10B500EAAA28 /* CustomDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDelegate.swift; sourceTree = "<group>"; };
+		491B6E8325CBC894001A4494 /* UnderlineTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlineTextField.swift; sourceTree = "<group>"; };
+		495FC87D25CBBB9900EA73AA /* CreateToutine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateToutine.storyboard; sourceTree = "<group>"; };
+		495FC88025CBBCF100EA73AA /* CreateRoutineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoutineViewController.swift; sourceTree = "<group>"; };
+		495FC88425CBBF9F00EA73AA /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		495FC88725CBC14E00EA73AA /* Extenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extenstion.swift; sourceTree = "<group>"; };
+		499EBC4325C7D20D00C42C5C /* MassageRobot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MassageRobot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		499EBC4625C7D20D00C42C5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		499EBC4825C7D20D00C42C5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		499EBC4A25C7D20D00C42C5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		499EBC4D25C7D20D00C42C5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		499EBC5025C7D20D00C42C5C /* MassageRobot.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MassageRobot.xcdatamodel; sourceTree = "<group>"; };
+		499EBC5225C7D20E00C42C5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		499EBC5525C7D20E00C42C5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		499EBC5725C7D20E00C42C5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49AFC49B25DE8112003DDB95 /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
+		49AFC49E25DE818C003DDB95 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		49B6D12625DC033C005F2FE8 /* FilledColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledColorView.swift; sourceTree = "<group>"; };
+		49B8DA2725D2B9950000B386 /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		49E00CB825DEAD3D0098AD41 /* RoutineParam.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoutineParam.xib; sourceTree = "<group>"; };
+		49E00CBB25DEAEAE0098AD41 /* RoutineParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineParam.swift; sourceTree = "<group>"; };
+		94F711D24C61C70C0D5AA724 /* Pods-MassageRobot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MassageRobot.debug.xcconfig"; path = "Target Support Files/Pods-MassageRobot/Pods-MassageRobot.debug.xcconfig"; sourceTree = "<group>"; };
+		ADC9434CA4B5F7B9D91DAE65 /* Pods_MassageRobot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MassageRobot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		499EBC4025C7D20D00C42C5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7CA1A9DE94BBEAB99A454F1 /* Pods_MassageRobot.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		183DE2B225F0FF88009CCDCC /* LoginRegisterView */ = {
+			isa = PBXGroup;
+			children = (
+				183DE2AF25F0FF7B009CCDCC /* LoginViewController.swift */,
+			);
+			path = LoginRegisterView;
+			sourceTree = "<group>";
+		};
+		183DE2B425F10210009CCDCC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				183DE2B525F10210009CCDCC /* LoginModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		18D17BDB25EE2DF40013E531 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				499EBC4A25C7D20D00C42C5C /* ViewController.swift */,
+				18D17BDC25EE2E2C0013E531 /* HomeViewCell.swift */,
+				18D17BDD25EE2E2C0013E531 /* HomeViewCell.xib */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		280450FB778B31FF0FD9D3DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94F711D24C61C70C0D5AA724 /* Pods-MassageRobot.debug.xcconfig */,
+				0763F3EF3F6FEC075D6AE0E3 /* Pods-MassageRobot.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		491B6E8625CBD0C1001A4494 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				490D1A4625CBD87900EAAA28 /* SF-Pro-Text-Bold.otf */,
+				490D1A4825CBD87A00EAAA28 /* SF-Pro-Text-BoldItalic.otf */,
+				490D1A4F25CBD87A00EAAA28 /* SF-Pro-Text-Heavy.otf */,
+				490D1A4E25CBD87A00EAAA28 /* SF-Pro-Text-HeavyItalic.otf */,
+				490D1A4725CBD87900EAAA28 /* SF-Pro-Text-Light.otf */,
+				490D1A4525CBD87900EAAA28 /* SF-Pro-Text-LightItalic.otf */,
+				490D1A4B25CBD87A00EAAA28 /* SF-Pro-Text-Medium.otf */,
+				490D1A4C25CBD87A00EAAA28 /* SF-Pro-Text-MediumItalic.otf */,
+				490D1A4925CBD87A00EAAA28 /* SF-Pro-Text-Regular.otf */,
+				490D1A4A25CBD87A00EAAA28 /* SF-Pro-Text-RegularItalic.otf */,
+				490D1A4D25CBD87A00EAAA28 /* SF-Pro-Text-Semibold.otf */,
+				490D1A5025CBD87A00EAAA28 /* SF-Pro-Text-SemiboldItalic.otf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		495FC88A25CBC15900EA73AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				183DE2B425F10210009CCDCC /* Login */,
+				18DEF2EC25EE6B8300ABD7FA /* SharedFunctions.swift */,
+				183DE2BB25F103CE009CCDCC /* helper.swift */,
+				183DE2B825F10371009CCDCC /* UIApplication+extention.swift */,
+				186796F925EE480F003CD7CB /* Constant.swift */,
+				491B6E8325CBC894001A4494 /* UnderlineTextField.swift */,
+				495FC88725CBC14E00EA73AA /* Extenstion.swift */,
+				49B8DA2725D2B9950000B386 /* JSONParser.swift */,
+				49B6D12625DC033C005F2FE8 /* FilledColorView.swift */,
+				49AFC49B25DE8112003DDB95 /* TriangleView.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		499EBC3A25C7D20D00C42C5C = {
+			isa = PBXGroup;
+			children = (
+				499EBC4525C7D20D00C42C5C /* MassageRobot */,
+				499EBC4425C7D20D00C42C5C /* Products */,
+				280450FB778B31FF0FD9D3DF /* Pods */,
+				D68232EEEE889B79633B0923 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		499EBC4425C7D20D00C42C5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				499EBC4325C7D20D00C42C5C /* MassageRobot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		499EBC4525C7D20D00C42C5C /* MassageRobot */ = {
+			isa = PBXGroup;
+			children = (
+				499EBC5F25C7D2C500C42C5C /* Delegate */,
+				499EBC6125C7D2CD00C42C5C /* Controller */,
+				499EBC6325C7D2DD00C42C5C /* View */,
+				495FC88A25CBC15900EA73AA /* Model */,
+				499EBC6425C7D2E500C42C5C /* Resurces */,
+				499EBC5725C7D20E00C42C5C /* Info.plist */,
+				499EBC4F25C7D20D00C42C5C /* MassageRobot.xcdatamodeld */,
+			);
+			path = MassageRobot;
+			sourceTree = "<group>";
+		};
+		499EBC5F25C7D2C500C42C5C /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				499EBC4625C7D20D00C42C5C /* AppDelegate.swift */,
+				499EBC4825C7D20D00C42C5C /* SceneDelegate.swift */,
+				490D1A7D25CC10B500EAAA28 /* CustomDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		499EBC6125C7D2CD00C42C5C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18D17BDB25EE2DF40013E531 /* HomeView */,
+				495FC88025CBBCF100EA73AA /* CreateRoutineViewController.swift */,
+				49AFC49E25DE818C003DDB95 /* SettingsViewController.swift */,
+				49E00CBB25DEAEAE0098AD41 /* RoutineParam.swift */,
+				183DE2B225F0FF88009CCDCC /* LoginRegisterView */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		499EBC6325C7D2DD00C42C5C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				499EBC4C25C7D20D00C42C5C /* Main.storyboard */,
+				499EBC5425C7D20E00C42C5C /* LaunchScreen.storyboard */,
+				495FC87D25CBBB9900EA73AA /* CreateToutine.storyboard */,
+				49E00CB825DEAD3D0098AD41 /* RoutineParam.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		499EBC6425C7D2E500C42C5C /* Resurces */ = {
+			isa = PBXGroup;
+			children = (
+				491B6E8625CBD0C1001A4494 /* font */,
+				499EBC5225C7D20E00C42C5C /* Assets.xcassets */,
+				495FC88425CBBF9F00EA73AA /* Media.xcassets */,
+			);
+			path = Resurces;
+			sourceTree = "<group>";
+		};
+		D68232EEEE889B79633B0923 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADC9434CA4B5F7B9D91DAE65 /* Pods_MassageRobot.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		499EBC4225C7D20D00C42C5C /* MassageRobot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 499EBC5A25C7D20E00C42C5C /* Build configuration list for PBXNativeTarget "MassageRobot" */;
+			buildPhases = (
+				3FA13F019F3D0C5155D3E841 /* [CP] Check Pods Manifest.lock */,
+				499EBC3F25C7D20D00C42C5C /* Sources */,
+				499EBC4025C7D20D00C42C5C /* Frameworks */,
+				499EBC4125C7D20D00C42C5C /* Resources */,
+				30D6903E57A92D17D5A5C9BD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MassageRobot;
+			productName = MassageRobot;
+			productReference = 499EBC4325C7D20D00C42C5C /* MassageRobot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		499EBC3B25C7D20D00C42C5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					499EBC4225C7D20D00C42C5C = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 499EBC3E25C7D20D00C42C5C /* Build configuration list for PBXProject "MassageRobot" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 499EBC3A25C7D20D00C42C5C;
+			productRefGroup = 499EBC4425C7D20D00C42C5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				499EBC4225C7D20D00C42C5C /* MassageRobot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		499EBC4125C7D20D00C42C5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495FC88525CBBF9F00EA73AA /* Media.xcassets in Resources */,
+				490D1A5825CBD87A00EAAA28 /* SF-Pro-Text-MediumItalic.otf in Resources */,
+				18D17BDF25EE2E2C0013E531 /* HomeViewCell.xib in Resources */,
+				49E00CB925DEAD3D0098AD41 /* RoutineParam.xib in Resources */,
+				490D1A5225CBD87A00EAAA28 /* SF-Pro-Text-Bold.otf in Resources */,
+				490D1A5325CBD87A00EAAA28 /* SF-Pro-Text-Light.otf in Resources */,
+				499EBC5625C7D20E00C42C5C /* LaunchScreen.storyboard in Resources */,
+				499EBC5325C7D20E00C42C5C /* Assets.xcassets in Resources */,
+				490D1A5925CBD87A00EAAA28 /* SF-Pro-Text-Semibold.otf in Resources */,
+				499EBC4E25C7D20D00C42C5C /* Main.storyboard in Resources */,
+				490D1A5A25CBD87A00EAAA28 /* SF-Pro-Text-HeavyItalic.otf in Resources */,
+				490D1A5525CBD87A00EAAA28 /* SF-Pro-Text-Regular.otf in Resources */,
+				490D1A5C25CBD87A00EAAA28 /* SF-Pro-Text-SemiboldItalic.otf in Resources */,
+				490D1A5125CBD87A00EAAA28 /* SF-Pro-Text-LightItalic.otf in Resources */,
+				490D1A5725CBD87A00EAAA28 /* SF-Pro-Text-Medium.otf in Resources */,
+				490D1A5425CBD87A00EAAA28 /* SF-Pro-Text-BoldItalic.otf in Resources */,
+				495FC87E25CBBB9900EA73AA /* CreateToutine.storyboard in Resources */,
+				490D1A5625CBD87A00EAAA28 /* SF-Pro-Text-RegularItalic.otf in Resources */,
+				490D1A5B25CBD87A00EAAA28 /* SF-Pro-Text-Heavy.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30D6903E57A92D17D5A5C9BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MassageRobot/Pods-MassageRobot-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MassageRobot/Pods-MassageRobot-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MassageRobot/Pods-MassageRobot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FA13F019F3D0C5155D3E841 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MassageRobot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		499EBC3F25C7D20D00C42C5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18DEF2ED25EE6B8300ABD7FA /* SharedFunctions.swift in Sources */,
+				495FC88825CBC14E00EA73AA /* Extenstion.swift in Sources */,
+				49E00CBC25DEAEAE0098AD41 /* RoutineParam.swift in Sources */,
+				183DE2BC25F103CE009CCDCC /* helper.swift in Sources */,
+				186796FA25EE4810003CD7CB /* Constant.swift in Sources */,
+				499EBC5125C7D20D00C42C5C /* MassageRobot.xcdatamodeld in Sources */,
+				49B8DA2825D2B9950000B386 /* JSONParser.swift in Sources */,
+				499EBC4B25C7D20D00C42C5C /* ViewController.swift in Sources */,
+				495FC88125CBBCF100EA73AA /* CreateRoutineViewController.swift in Sources */,
+				499EBC4725C7D20D00C42C5C /* AppDelegate.swift in Sources */,
+				490D1A7E25CC10B500EAAA28 /* CustomDelegate.swift in Sources */,
+				183DE2B925F10372009CCDCC /* UIApplication+extention.swift in Sources */,
+				49AFC49C25DE8112003DDB95 /* TriangleView.swift in Sources */,
+				18D17BDE25EE2E2C0013E531 /* HomeViewCell.swift in Sources */,
+				499EBC4925C7D20D00C42C5C /* SceneDelegate.swift in Sources */,
+				183DE2B625F10210009CCDCC /* LoginModel.swift in Sources */,
+				183DE2B025F0FF7B009CCDCC /* LoginViewController.swift in Sources */,
+				49B6D12725DC033C005F2FE8 /* FilledColorView.swift in Sources */,
+				491B6E8425CBC895001A4494 /* UnderlineTextField.swift in Sources */,
+				49AFC49F25DE818C003DDB95 /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		499EBC4C25C7D20D00C42C5C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				499EBC4D25C7D20D00C42C5C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		499EBC5425C7D20E00C42C5C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				499EBC5525C7D20E00C42C5C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		499EBC5825C7D20E00C42C5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		499EBC5925C7D20E00C42C5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		499EBC5B25C7D20E00C42C5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94F711D24C61C70C0D5AA724 /* Pods-MassageRobot.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 52555FNFWG;
+				INFOPLIST_FILE = MassageRobot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MassageRobotics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = MassageRobotics_Dev_1Feb;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		499EBC5C25C7D20E00C42C5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0763F3EF3F6FEC075D6AE0E3 /* Pods-MassageRobot.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 52555FNFWG;
+				INFOPLIST_FILE = MassageRobot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MassageRobotics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = MassageRobotics_Dev_1Feb;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		499EBC3E25C7D20D00C42C5C /* Build configuration list for PBXProject "MassageRobot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				499EBC5825C7D20E00C42C5C /* Debug */,
+				499EBC5925C7D20E00C42C5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		499EBC5A25C7D20E00C42C5C /* Build configuration list for PBXNativeTarget "MassageRobot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				499EBC5B25C7D20E00C42C5C /* Debug */,
+				499EBC5C25C7D20E00C42C5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		499EBC4F25C7D20D00C42C5C /* MassageRobot.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				499EBC5025C7D20D00C42C5C /* MassageRobot.xcdatamodel */,
+			);
+			currentVersion = 499EBC5025C7D20D00C42C5C /* MassageRobot.xcdatamodel */;
+			path = MassageRobot.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 499EBC3B25C7D20D00C42C5C /* Project object */;
+}
