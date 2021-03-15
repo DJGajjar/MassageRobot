@@ -6,6 +6,9 @@ PODS:
   - NVActivityIndicatorView (4.5.1):
     - NVActivityIndicatorView/Presenter (= 4.5.1)
   - NVActivityIndicatorView/Presenter (4.5.1)
+  - SDWebImage (5.10.4):
+    - SDWebImage/Core (= 5.10.4)
+  - SDWebImage/Core (5.10.4)
   - TagListView (1.4.1)
   - Toast-Swift (5.0.1)
 
@@ -15,6 +18,7 @@ DEPENDENCIES:
   - EasyTipView (~> 2.1)
   - IQKeyboardManagerSwift
   - NVActivityIndicatorView (~> 4.5.0)
+  - SDWebImage
   - TagListView (~> 1.0)
   - Toast-Swift (~> 5.0.1)
 
@@ -25,6 +29,7 @@ SPEC REPOS:
     - EasyTipView
     - IQKeyboardManagerSwift
     - NVActivityIndicatorView
+    - SDWebImage
     - TagListView
     - Toast-Swift
 
@@ -34,9 +39,10 @@ SPEC CHECKSUMS:
   EasyTipView: a92b6edc377b81c5ac18e9fd35d5ee78e9409488
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   NVActivityIndicatorView: ec34a7b88c51fab270004a1a1f32116e711010cd
+  SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
   TagListView: a1c236d17960a0cf64156725a76ce6d73ebce2be
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: 121aa7f4d623ba1d6a2dbdeec9f38548955a774a
+PODFILE CHECKSUM: eb9b6783def9a5191b796a9ba34a9753b002fab4
 
-COCOAPODS: 1.10.0.rc.1
+COCOAPODS: 1.10.0

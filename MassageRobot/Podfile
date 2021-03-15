@@ -13,4 +13,5 @@ target 'MassageRobot' do
   pod 'EasyTipView', '~> 2.1'
   pod 'TagListView', '~> 1.0' #1.4.1
   pod 'Toast-Swift', '~> 5.0.1'
+  pod 'SDWebImage'
 end

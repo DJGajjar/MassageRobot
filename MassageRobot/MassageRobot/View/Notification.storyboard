@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="89s-4G-I1v">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Bold.otf">
+            <string>SFProText-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="1nu-gd-Vfh">
+            <objects>
+                <viewController id="rQS-hD-h1l" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LAq-pZ-Wcs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4e4-Ri-ccP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Nu-ec-FHf">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="52"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drl-NM-e6A">
+                                                <rect key="frame" x="79" y="16" width="217" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="4IL-Sl-Gyg"/>
+                                                    <constraint firstAttribute="width" constant="217" id="b6L-3F-66e"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.070588235289999995" green="0.63529411759999999" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="3Qp-bq-Ife"/>
+                                            <constraint firstItem="drl-NM-e6A" firstAttribute="centerX" secondItem="4Nu-ec-FHf" secondAttribute="centerX" id="GAl-Hb-ieb"/>
+                                            <constraint firstItem="drl-NM-e6A" firstAttribute="top" secondItem="4Nu-ec-FHf" secondAttribute="top" constant="16" id="RKV-tI-rad"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.070588235289999995" green="0.63529411759999999" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="TP5-JK-mki"/>
+                                    <constraint firstAttribute="trailing" secondItem="4Nu-ec-FHf" secondAttribute="trailing" id="c10-NG-XRY"/>
+                                    <constraint firstItem="4Nu-ec-FHf" firstAttribute="leading" secondItem="4e4-Ri-ccP" secondAttribute="leading" id="fnY-AU-leJ"/>
+                                    <constraint firstItem="4Nu-ec-FHf" firstAttribute="top" secondItem="4e4-Ri-ccP" secondAttribute="top" constant="44" id="gi4-AA-Ome"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6I6-qC-kwJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4e4-Ri-ccP" firstAttribute="top" secondItem="LAq-pZ-Wcs" secondAttribute="top" id="gl7-6a-phc"/>
+                            <constraint firstItem="4e4-Ri-ccP" firstAttribute="leading" secondItem="6I6-qC-kwJ" secondAttribute="leading" id="r9A-Cg-g3f"/>
+                            <constraint firstItem="4e4-Ri-ccP" firstAttribute="trailing" secondItem="6I6-qC-kwJ" secondAttribute="trailing" id="vss-se-SqH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eRE-RI-MMO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yDk-iD-PL7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1297.1014492753625" y="48.883928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1ou-8q-GFg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="89s-4G-I1v" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="Notfication" badgeValue="1" selectedImage="SelectNotification" id="S1u-fS-ys5"/>
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qIb-Sf-gsy">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rQS-hD-h1l" kind="relationship" relationship="rootViewController" id="a3C-id-dhI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b6H-Um-ASv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="386.95652173913044" y="48.883928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Notfication" width="18" height="18"/>
+        <image name="SelectNotification" width="18" height="18"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
