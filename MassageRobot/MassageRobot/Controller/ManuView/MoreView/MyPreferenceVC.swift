@@ -24,6 +24,8 @@ class MyPreferenceVC: UIViewController {
     var currentIndexpath  = IndexPath(row: 0, section: 0)
     var currentIndexVal : Int = 0
     
+    var isSubmitQue: Bool = false
+    
     var questionaryFile = [[String: Any]]()
     var localQueAndList = [[String: Any]]()
     var staticpickervalue = ["Monthly", "Bi-Weekly", "Weekly", "Daily"]
@@ -31,39 +33,7 @@ class MyPreferenceVC: UIViewController {
     var dictLocalStore = [String: AnyObject]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-            
-        var myArray = [[String: String]]()
-        for i in 0..<10 {
-
-            let dict = ["name": "Item\(i)", "foo": "bar\(i)"]
-            myArray.append(dict)
-        }
-        print("\(myArray)")
-        
-        var dictionaries = [[String: Int]]()
-
-        // Create a dictionary and add it to the array.
-        let dictionary1: [String: Int] = ["cat": 100]
-        dictionaries.append(dictionary1)
-
-        // Create another dictionary.
-        let dictionary2: [String: Int] = ["dog": 200]
-        dictionaries.append(dictionary2)
-
-        // Get value from dictionary in array element 0.
-        if let value = dictionaries[0]["cat"] {
-            print(value)
-        }
-
-        // Get value from dictionary that does not exist.
-        if dictionaries[1]["diamond"] != nil {
-            // This is not reached.
-            print("Not reached")
-        }
-        
-        print(dictionaries)
-        
+                        
         ViewTop_UPRadius(value: 10, outlet: self.progressandCount )
         ViewBottom_DownRadius(value: 10, outlet: self.previousandNextView )
         
@@ -137,34 +107,38 @@ class MyPreferenceVC: UIViewController {
             let questionList = questionaryFile[currentIndexpath.row]
             let strAnsQue: String = UserDefaults.standard.object(forKey: QueAns) as? String ?? ""
             
-            self.setQueAnsDataStoreIntDict(strQue: questionList.getString(key: "preferencequestion"), strQueID: questionList.getString(key: "questionid"), strAns: strAnsQue)
+            isSubmitQue = true
             
-            let userID: String = UserDefaults.standard.object(forKey: USERID) as? String ?? ""
-//            "https://massage-robotics-website.uc.r.appspot.com/wt?tablename=userpreference&row=[('\(userID)','\((ansDataList.getString(key: "QueID")))','\((ansDataList.getString(key: "Ans")))')]"
-            
-            for i in 0..<localQueAndList.count {
-                                    
-                let ansDataList = localQueAndList[i]
-                print(ansDataList.getString(key: "QueID"))
-                let url = "https://massage-robotics-website.uc.r.appspot.com/rd?query='UPDATE userpreference SET user_preference_answer='\(ansDataList.getDictionary(key: "QueAnd").getString(key: "Ans"))' where questionid='\(ansDataList.getDictionary(key: "QueAnd").getString(key: "QueID"))' and userid='\(userID)''"
-                
-                print(url)
-                
-                let encodedUrl = url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
-                
-                callAPI(url: encodedUrl!) { [self] (json, data1) in
-                    print(json)
-                }
-            }
+            self.setQueAnsServiceCall(strQueID: questionList.getString(key: "questionid"), strAns: strAnsQue)
+                        
+//            let userID: String = UserDefaults.standard.object(forKey: USERID) as? String ?? ""
+////            "https://massage-robotics-website.uc.r.appspot.com/wt?tablename=userpreference&row=[('\(userID)','\((ansDataList.getString(key: "QueID")))','\((ansDataList.getString(key: "Ans")))')]"
+//
+//            for i in 0..<localQueAndList.count {
+//
+//                let ansDataList = localQueAndList[i]
+//                print(ansDataList.getString(key: "QueID"))
+//                let url = "https://massage-robotics-website.uc.r.appspot.com/rd?query='UPDATE userpreference SET user_preference_answer='\(ansDataList.getDictionary(key: "QueAnd").getString(key: "Ans"))' where questionid='\(ansDataList.getDictionary(key: "QueAnd").getString(key: "QueID"))' and userid='\(userID)''"
+//
+//                print(url)
+//
+//                let encodedUrl = url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+//
+//                callAPI(url: encodedUrl!) { [self] (json, data1) in
+//                    print(json)
+//                }
+//            }
             //Service call
         }else{
+            isSubmitQue = false
+            
             if sender.tag == 1 {
                 
                 let questionList = questionaryFile[currentIndexpath.row]
                 let strAnsQue: String = UserDefaults.standard.object(forKey: QueAns) as? String ?? ""
                 
-                self.setQueAnsDataStoreIntDict(strQue: questionList.getString(key: "preferencequestion"), strQueID: questionList.getString(key: "questionid"), strAns: strAnsQue)
-                
+                self.setQueAnsServiceCall(strQueID: questionList.getString(key: "questionid"), strAns: strAnsQue)
+                                
                 self.currentIndexpath = IndexPath(row: Int(currentPlace) + 1, section: 0)
                 print(currentIndexpath.row)
                 
@@ -191,14 +165,66 @@ class MyPreferenceVC: UIViewController {
                 }
             }
         }
-        self.collectionObj.scrollToItem(at: currentIndexpath, at: .left, animated: true)
-        
         collectionObj.reloadData()
+        self.collectionObj.scrollToItem(at: currentIndexpath, at: .left, animated: true)
     }
     
     func setQueAnsDataStoreIntDict(strQue: String, strQueID: String, strAns: String) {
-        dictLocalStore["QueAnd"] = ["Que": strQue, "QueID": strQueID, "Ans": strAns] as AnyObject
+        dictLocalStore["QueAns"] = ["Que": strQue, "QueID": strQueID, "Ans": strAns] as AnyObject
         localQueAndList.append(dictLocalStore)
+    }
+    
+    func setQueAnsServiceCall(strQueID: String, strAns:String) {
+        
+        let strUploadQue: String = UserDefaults.standard.object(forKey: ISANSUPLOAD) as? String ?? ""
+        
+        let userID: String = UserDefaults.standard.object(forKey: USERID) as? String ?? ""
+        
+        let strAnsQue: String = UserDefaults.standard.object(forKey: QueAns) as? String ?? ""
+        
+        let questionList = questionaryFile[currentIndexpath.row]
+        
+        if strUploadQue == "Yes" {
+            let url = "https://massage-robotics-website.uc.r.appspot.com/rd?query='UPDATE userpreference SET user_preference_answer='\(strAns)' where questionid='\(strQueID)' and userid='\(userID)''"
+                        
+            print(url)
+            
+            let encodedUrl = url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+            
+            callAPI(url: encodedUrl!) { [self] (json, data1) in
+                print(json)
+                
+                if json.getString(key: "Response") == "UPDATE query executed Successfully" {
+                    self.setQueAnsDataStoreIntDict(strQue: questionList.getString(key: "preferencequestion"), strQueID: questionList.getString(key: "questionid"), strAns: strAnsQue)
+                }
+                
+                if isSubmitQue == true {
+                    let sb = UIStoryboard(name: "Menu", bundle: nil)
+                    let vc = sb.instantiateViewController(withIdentifier: "AnsQueListView") as! AnsQueListViewController
+                    vc.queAnsList.append(contentsOf: localQueAndList)
+                    navigationController?.pushViewController(vc, animated: false)
+                }
+            }
+        }else {
+            let url = "https://massage-robotics-website.uc.r.appspot.com/wt?tablename=userpreference&row=[('\(userID)','\(strQueID)','\(strAns)')]"
+            
+            print(url)
+            
+            let encodedUrl = url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+            
+            callAPI(url: encodedUrl!) { [self] (json, data1) in
+                print(json)
+                
+                self.setQueAnsDataStoreIntDict(strQue: questionList.getString(key: "preferencequestion"), strQueID: questionList.getString(key: "questionid"), strAns: strAnsQue)
+                
+                if isSubmitQue == true {
+                    let sb = UIStoryboard(name: "Menu", bundle: nil)
+                    let vc = sb.instantiateViewController(withIdentifier: "AnsQueListView") as! AnsQueListViewController
+                    vc.queAnsList.append(contentsOf: localQueAndList)
+                    navigationController?.pushViewController(vc, animated: false)
+                }
+            }
+        }
     }
 }
 

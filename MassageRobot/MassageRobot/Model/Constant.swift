@@ -31,6 +31,7 @@ let ISLOGIN = "isLogin"
 let ISHOMEPAGE = "isHomePage"
 let USERID = "userID"
 let QueAns = "queans"
+let ISANSUPLOAD = "IsAnsUpload"
 
 public var strBaseAPI = ""
 

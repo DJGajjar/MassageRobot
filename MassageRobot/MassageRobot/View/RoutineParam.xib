@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -217,7 +217,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ukl-kd-oXI">
                                     <rect key="frame" x="91" y="10" width="268" height="61"/>
                                     <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="L. Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZFD-Hk-l4x" customClass="UnderlineTextField" customModule="MassageRobot" customModuleProvider="target">
+                                        <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="L. Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZFD-Hk-l4x" customClass="UnderlineTextField" customModule="MassageRobot" customModuleProvider="target">
                                             <rect key="frame" x="10" y="10" width="119" height="41"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -229,7 +229,7 @@
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="needPadding" value="YES"/>
                                             </userDefinedRuntimeAttributes>
                                         </textField>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="R. Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kdh-k5-U17" customClass="UnderlineTextField" customModule="MassageRobot" customModuleProvider="target">
+                                        <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="R. Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kdh-k5-U17" customClass="UnderlineTextField" customModule="MassageRobot" customModuleProvider="target">
                                             <rect key="frame" x="139" y="10" width="119" height="41"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -241,17 +241,68 @@
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="needPadding" value="YES"/>
                                             </userDefinedRuntimeAttributes>
                                         </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwR-7D-vgs">
+                                            <rect key="frame" x="10" y="10" width="119" height="41"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="119" id="yRc-H9-nLl"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="13"/>
+                                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="L. Location">
+                                                <color key="titleColor" red="0.74509803921568629" green="0.74509803921568629" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="needPadding" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="btnLeftLocationAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="f7H-Fe-3Zv"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HqM-au-fOO">
+                                            <rect key="frame" x="139" y="10" width="119" height="41"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="119" id="baB-Vx-w6L"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="13"/>
+                                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" title="R. Location">
+                                                <color key="titleColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="needPadding" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="btnRightLocationAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="pYS-Ah-H0W"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.6705882353" green="0.81469672920000002" blue="0.86667650939999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="Kdh-k5-U17" secondAttribute="bottom" constant="10" id="2G2-vr-fDL"/>
                                         <constraint firstItem="Kdh-k5-U17" firstAttribute="width" secondItem="ZFD-Hk-l4x" secondAttribute="width" id="4Hd-8h-knX"/>
+                                        <constraint firstItem="zwR-7D-vgs" firstAttribute="leading" secondItem="ukl-kd-oXI" secondAttribute="leading" constant="10" id="C4d-PB-uii"/>
                                         <constraint firstItem="ZFD-Hk-l4x" firstAttribute="leading" secondItem="ukl-kd-oXI" secondAttribute="leading" constant="10" id="CqL-v4-sdz"/>
+                                        <constraint firstItem="HqM-au-fOO" firstAttribute="leading" secondItem="ZFD-Hk-l4x" secondAttribute="trailing" constant="10" id="IXp-hE-BRP"/>
+                                        <constraint firstItem="HqM-au-fOO" firstAttribute="top" secondItem="ukl-kd-oXI" secondAttribute="top" constant="10" id="RvU-25-gHb"/>
+                                        <constraint firstAttribute="bottom" secondItem="HqM-au-fOO" secondAttribute="bottom" constant="10" id="UMQ-gE-wzs"/>
+                                        <constraint firstItem="HqM-au-fOO" firstAttribute="width" secondItem="zwR-7D-vgs" secondAttribute="width" id="Xbi-x6-6sk"/>
                                         <constraint firstItem="Kdh-k5-U17" firstAttribute="top" secondItem="ukl-kd-oXI" secondAttribute="top" constant="10" id="XiL-XY-ib8"/>
                                         <constraint firstItem="ZFD-Hk-l4x" firstAttribute="top" secondItem="ukl-kd-oXI" secondAttribute="top" constant="10" id="Xrw-aq-qKD"/>
+                                        <constraint firstItem="HqM-au-fOO" firstAttribute="leading" secondItem="zwR-7D-vgs" secondAttribute="trailing" constant="10" id="dBx-mv-ads"/>
                                         <constraint firstAttribute="bottom" secondItem="ZFD-Hk-l4x" secondAttribute="bottom" constant="10" id="emz-93-usA"/>
+                                        <constraint firstAttribute="bottom" secondItem="zwR-7D-vgs" secondAttribute="bottom" constant="10" id="hk8-bC-bAC"/>
                                         <constraint firstAttribute="trailing" secondItem="Kdh-k5-U17" secondAttribute="trailing" constant="10" id="msk-TY-fZb"/>
                                         <constraint firstItem="Kdh-k5-U17" firstAttribute="leading" secondItem="ZFD-Hk-l4x" secondAttribute="trailing" constant="10" id="u64-pb-L2J"/>
+                                        <constraint firstItem="zwR-7D-vgs" firstAttribute="top" secondItem="ukl-kd-oXI" secondAttribute="top" constant="10" id="xLW-cW-3af"/>
+                                        <constraint firstAttribute="trailing" secondItem="HqM-au-fOO" secondAttribute="trailing" constant="10" id="xlp-ti-ftI"/>
                                     </constraints>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -620,6 +671,12 @@
                 <outlet property="lblSegmentEnd" destination="8VF-3I-9NM" id="LuB-yD-hZz"/>
                 <outlet property="lblSegmentNo" destination="46R-hm-Tm4" id="l2G-RK-iqb"/>
                 <outlet property="lblSegmentStart" destination="U0g-Gu-oAm" id="8Lg-Ff-NNc"/>
+                <outlet property="txtLeftLocation" destination="ZFD-Hk-l4x" id="wAm-0Z-EXo"/>
+                <outlet property="txtLeftPath" destination="MSy-TA-CZ0" id="FhN-Vg-fwU"/>
+                <outlet property="txtLeftTool" destination="fsX-WO-6LL" id="rz5-ZC-XSy"/>
+                <outlet property="txtRightLocation" destination="Kdh-k5-U17" id="jSW-Uc-caf"/>
+                <outlet property="txtRightPath" destination="bpU-i1-Ae0" id="TcO-iV-j2P"/>
+                <outlet property="txtRightTool" destination="Zy2-bv-dNO" id="8Qe-Yt-7op"/>
                 <outlet property="txtTime" destination="KAQ-12-ItZ" id="ItV-Da-lPH"/>
                 <outlet property="viewLeftForce" destination="V5L-a9-obH" id="Dst-qy-L1N"/>
                 <outlet property="viewLeftSpeed" destination="NnI-VQ-xFO" id="mGP-5n-W4Q"/>

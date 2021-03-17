@@ -25,6 +25,7 @@ class MyProfileViewController: UIViewController {
     @IBOutlet var lblAddress: UILabel!
     
     var arrMyProfileData = [[String: Any]]()
+    var strPath: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,6 +82,16 @@ class MyProfileViewController: UIViewController {
             }
          }
       }
+    }
+    
+    @IBAction func btnBackToMenuAction(_ sender: UIButton) {
+        
+        if strPath == "AnsList" {
+            let viewControllers: [UIViewController] = self.navigationController!.viewControllers as [UIViewController]
+            self.navigationController!.popToViewController(viewControllers[viewControllers.count - 4], animated: true)
+        }else {
+            navigationController?.popViewController(animated: true)
+        }
     }
     
     @IBAction func btnUpdateProfileAction(_ sender: UIButton) {

@@ -73,6 +73,8 @@ class SignUpViewController: UIViewController {
         callAPI(url: encodedUrl, param: [:], method: .post) { (rModel:LogionModel?) in
             if rModel != nil{
                 
+                UserDefaults.standard.set("No", forKey: ISANSUPLOAD)
+                
                 let isHome: String = UserDefaults.standard.object(forKey: ISHOMEPAGE) as? String ?? "No"
                 if isHome == "Yes" {
                     let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "TabViewController") as! TabViewController

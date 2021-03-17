@@ -75,6 +75,7 @@ class LoginViewController: UIViewController {
                 let isHome: String = UserDefaults.standard.object(forKey: ISHOMEPAGE) as? String ?? "No"
                 
                 UserDefaults.standard.set("Yes", forKey: ISLOGIN)
+                UserDefaults.standard.set("No", forKey: ISANSUPLOAD)
                 
                     if isHome == "Yes" {
                         let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "TabViewController") as! TabViewController

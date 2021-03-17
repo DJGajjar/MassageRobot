@@ -7,16 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CA05A365-06DC-46E2-908B-D78C06728FBA"
+            uuid = "F655ECB6-3E2A-45B2-9525-299438074442"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MassageRobot/Controller/ManuView/MyPreferenceVC.swift"
+            filePath = "MassageRobot/Controller/ManuView/MoreView/MyPreferenceVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
-            landmarkName = "priviewNextAction(_:)"
+            startingLineNumber = "221"
+            endingLineNumber = "221"
+            landmarkName = "setQueAnsServiceCall(strQueID:strAns:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A46020DF-F997-403E-997D-D8FDBC8EE742"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MassageRobot/Controller/RoutineParam.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "btnRightLocationAction(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

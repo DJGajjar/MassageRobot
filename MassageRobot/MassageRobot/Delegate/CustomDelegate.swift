@@ -20,3 +20,7 @@ protocol SliderValueSetDelegate {
 protocol RulerSizeDelegate {
     func rulerSize(size: Int, index: Int)
 }
+
+protocol LocationDelegate {
+    func locationViewAnimation()
+}

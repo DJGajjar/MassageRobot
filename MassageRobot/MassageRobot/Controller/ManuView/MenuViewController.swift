@@ -63,13 +63,13 @@ extension MenuViewController : UITableViewDelegate,UITableViewDataSource{
             case 0:
                 print("Profile")
                 let myProfileInfo = UIStoryboard(name: "Menu", bundle: nil).instantiateViewController(withIdentifier: "MyProfileViewController") as! MyProfileViewController
+                myProfileInfo.strPath = "Menu"
                 self.navigationController?.pushViewController(myProfileInfo, animated: true)
                 
             case 1:
                 print("My prference")
                 
                 let MyPreference = UIStoryboard(name: "Menu", bundle: nil).instantiateViewController(withIdentifier: "MyPreferenceVC") as! MyPreferenceVC
-                
                 self.navigationController?.pushViewController(MyPreference, animated: true)
                 
             case 2:

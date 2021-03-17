@@ -73,6 +73,18 @@ func showAlert(title: String, message: String, viewController: UIViewController)
     viewController.present(alertView, animated: true, completion: nil)
 }
 
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
+
 extension UIViewController: NVActivityIndicatorViewable
 {
     func showToast(message: String)

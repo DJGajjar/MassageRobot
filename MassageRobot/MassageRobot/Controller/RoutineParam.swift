@@ -28,6 +28,14 @@ class RoutineParam: UIView {
     @IBOutlet weak var lblLeftForce: UILabel!
     @IBOutlet weak var lblRightForce: UILabel!
     @IBOutlet weak var txtTime: UnderlineTextField!
+    @IBOutlet weak var txtLeftTool: UnderlineTextField!
+    @IBOutlet weak var txtRightTool: UnderlineTextField!
+    @IBOutlet weak var txtLeftPath: UnderlineTextField!
+    @IBOutlet weak var txtRightPath: UnderlineTextField!
+    @IBOutlet weak var txtLeftLocation: UnderlineTextField!
+    @IBOutlet weak var txtRightLocation: UnderlineTextField!
+    
+    @IBOutlet weak var btnLocationLfrt: UIButton!
     
     var triLeftSpeed: TriangleView!
     var triRightSpeed: TriangleView!
@@ -37,8 +45,12 @@ class RoutineParam: UIView {
     var sliderValue = 0
     var delegate: SliderValueSetDelegate?
     var delegateRuler: RulerSizeDelegate?
+    var delegateLocation: LocationDelegate?
     
     let picker = UIPickerView()
+    
+    let arrLRLocation = ["none", "Linear", "Circular", "Random", "Point"]
+    let arrLRTool = ["none", "Omni", "Inline", "Point", "Kneading","Sport","Precussion","Calibration"]
     
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
@@ -68,8 +80,20 @@ class RoutineParam: UIView {
         
         picker.delegate = self
         picker.dataSource = self
+        
         txtTime.delegate = self
+        txtLeftTool.delegate = self
+        txtRightTool.delegate = self
+        txtLeftPath.delegate = self
+        txtRightPath.delegate = self
+        txtLeftLocation.delegate = self
+        txtRightLocation.delegate = self
+        
         txtTime.inputView = picker
+        txtLeftTool.inputView = picker
+        txtRightTool.inputView = picker
+        txtLeftPath.inputView = picker
+        txtRightPath.inputView = picker
     }
     
     @IBAction func btnLeftSpeedAction(_ sender: UIButton) {
@@ -93,6 +117,13 @@ class RoutineParam: UIView {
         delegate?.sliderValueSet(value: Float(triRightForce.fillValue) * 100)
     }
     
+    @IBAction func btnLeftLocationAction(_ sender: UIButton) {
+        delegateLocation?.locationViewAnimation()
+    }
+    
+    @IBAction func btnRightLocationAction(_ sender: UIButton) {
+        delegateLocation?.locationViewAnimation()
+    }
 }
 
 extension RoutineParam: SliderValueSetDelegate
@@ -162,25 +193,89 @@ extension RoutineParam: UIPickerViewDelegate, UIPickerViewDataSource
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 60
+        
+        if txtTime.isEditing {
+            return 60
+        }else if txtLeftTool.isEditing {
+            return arrLRTool.count
+        }else if txtRightTool.isEditing {
+            return arrLRTool.count
+        }else if txtLeftPath.isEditing {
+            return arrLRLocation.count
+        }else if txtRightPath.isEditing {
+            return arrLRLocation.count
+        }else {
+            return 0
+        }
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return "\(row + 1)"
+        
+        if txtTime.isEditing {
+            return "\(row + 1)"
+        }else if txtLeftTool.isEditing {
+            return arrLRTool[row]
+        }else if txtRightTool.isEditing {
+            return arrLRTool[row]
+        }else if txtLeftPath.isEditing {
+            return arrLRLocation[row]
+        }else if txtRightPath.isEditing {
+            return arrLRLocation[row]
+        }else {
+            return ""
+        }
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        txtTime.text = "\(row + 1)"
-        lblSegmentEnd.text = "\(row + 1)"
-        delegateRuler?.rulerSize(size: row + 1, index: tag - 1)
+        
+        if txtTime.isEditing {
+            txtTime.text = "\(row + 1)"
+            lblSegmentEnd.text = "\(row + 1)"
+            delegateRuler?.rulerSize(size: row + 1, index: tag - 1)
+        }else if txtLeftTool.isEditing {
+            txtLeftTool.text = arrLRTool[row]
+            txtLeftTool.tag = row
+        }else if txtRightTool.isEditing {
+            txtRightTool.text = arrLRTool[row]
+            txtRightTool.tag = row
+        }else if txtLeftPath.isEditing {
+            txtLeftPath.text = arrLRLocation[row]
+            txtLeftPath.tag = row
+        }else if txtRightPath.isEditing {
+            txtRightPath.text = arrLRLocation[row]
+            txtRightPath.tag = row
+        }
     }
 }
 
 extension RoutineParam: UITextFieldDelegate
 {
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        txtTime.text = "\(1)"
-        lblSegmentEnd.text = "\(1)"
+        
+        if txtTime.isEditing {
+            txtTime.text = "\(1)"
+            lblSegmentEnd.text = "\(1)"
+        }else if txtLeftTool.isEditing {
+            txtLeftTool.text = arrLRTool[textField.tag]
+            picker.selectRow(txtLeftTool.tag, inComponent: 0, animated: true)
+        }else if txtRightTool.isEditing {
+            txtRightTool.text = arrLRTool[textField.tag]
+            picker.selectRow(txtRightTool.tag, inComponent: 0, animated: true)
+        }else if txtLeftPath.isEditing {
+            txtLeftPath.text = arrLRLocation[textField.tag]
+            picker.selectRow(txtLeftPath.tag, inComponent: 0, animated: true)
+        }else if txtRightPath.isEditing {
+            txtRightPath.text = arrLRLocation[textField.tag]
+            picker.selectRow(txtRightPath.tag, inComponent: 0, animated: true)
+        }else if txtLeftLocation.isEditing {
+            delegateLocation?.locationViewAnimation()
+        }else if txtRightLocation.isEditing {
+            delegateLocation?.locationViewAnimation()
+        }
+        
+        if textField == txtLeftTool || textField == txtRightTool || textField == txtLeftLocation || textField == txtRightLocation || textField == txtLeftPath || textField == txtRightPath {
+            picker.reloadAllComponents()
+        }
     }
 }
 
